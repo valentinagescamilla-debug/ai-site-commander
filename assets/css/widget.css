@@ -1,0 +1,141 @@
+#aisc-widget-wrap * {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+#aisc-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.4) !important;
+}
+
+#aisc-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+#aisc-chat-window {
+    animation: aisc-slide-up 0.3s ease;
+}
+
+@keyframes aisc-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#aisc-messages::-webkit-scrollbar {
+    width: 4px;
+}
+
+#aisc-messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#aisc-messages::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.aisc-message {
+    max-width: 85%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.aisc-message.user {
+    align-self: flex-end;
+    background: #6366f1;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.aisc-message.assistant {
+    align-self: flex-start;
+    background: white;
+    color: #333;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.aisc-message.error {
+    align-self: flex-start;
+    background: #fee2e2;
+    color: #dc2626;
+    border-bottom-left-radius: 4px;
+}
+
+.aisc-typing {
+    align-self: flex-start;
+    background: white;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.aisc-typing span {
+    width: 8px;
+    height: 8px;
+    background: #aaa;
+    border-radius: 50%;
+    animation: aisc-bounce 1.2s infinite;
+}
+
+.aisc-typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.aisc-typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes aisc-bounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-6px); }
+}
+
+#aisc-user-input:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+}
+
+#aisc-send-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+#aisc-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.aisc-message-time {
+    font-size: 11px;
+    opacity: 0.6;
+    margin-top: 4px;
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+    #aisc-chat-window {
+        width: 100vw !important;
+        height: 100vh !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+    }
+}
