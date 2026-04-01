@@ -1,0 +1,200 @@
+.aisc-wrap {
+    max-width: 900px;
+}
+
+.aisc-header {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    padding: 30px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.aisc-header h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0 0 8px 0;
+}
+
+.aisc-header p {
+    color: rgba(255,255,255,0.85);
+    margin: 0 0 16px 0;
+    font-size: 15px;
+}
+
+.aisc-status {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.aisc-status.ok {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.aisc-status.warn {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.aisc-tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0;
+}
+
+.aisc-tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.2s;
+}
+
+.aisc-tab:hover {
+    color: #6366f1;
+}
+
+.aisc-tab.active {
+    color: #6366f1;
+    border-bottom-color: #6366f1;
+    font-weight: 600;
+}
+
+.aisc-tab-content {
+    display: none;
+    padding-top: 24px;
+}
+
+.aisc-tab-content.active {
+    display: block;
+}
+
+.aisc-card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.aisc-card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 20px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.aisc-card .form-table th {
+    width: 200px;
+    padding: 16px 10px 16px 0;
+    font-weight: 600;
+    color: #374151;
+    font-size: 14px;
+}
+
+.aisc-card .form-table td {
+    padding: 12px 10px;
+}
+
+.aisc-card .form-table input[type="text"],
+.aisc-card .form-table input[type="password"],
+.aisc-card .form-table input[type="number"],
+.aisc-card .form-table select,
+.aisc-card .form-table textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.aisc-card .form-table input:focus,
+.aisc-card .form-table select:focus,
+.aisc-card .form-table textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+    outline: none;
+}
+
+.aisc-card .description {
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.aisc-card .description a {
+    color: #6366f1;
+}
+
+.aisc-save-bar {
+    background: white;
+    padding: 20px 32px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.aisc-save-bar .button-primary {
+    background: #6366f1;
+    border-color: #6366f1;
+    padding: 10px 28px;
+    height: auto;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.aisc-save-bar .button-primary:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 36px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.aisc-card label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #374151;
+}
+
+.aisc-card label input[type="radio"],
+.aisc-card label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #6366f1;
+}
+
+code {
+    background: #f3f4f6;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #6366f1;
+}
